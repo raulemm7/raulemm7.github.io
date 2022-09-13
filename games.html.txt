@@ -1,0 +1,403 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Games && Apps CNSCM</title>
+    <link rel="icon" type="image/x-icon" href="altepoze/favicon.ico">
+    
+    <style>
+
+      body {
+        background-image: url(altepoze/rozaliuu.png); /* The image used for background*/
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-position: center; /* Center the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        font-family: "Josefin Sans", sans-serif;
+        box-sizing: border-box;
+      }
+
+/* aici se baga butoanele */
+button{
+  width: 140px;
+  margin:20px 10px;
+  color: #591BC5;
+  font-size: 17px;
+  border:1px solid #EFEEF5;
+  font-weight: 500;
+  background: #EFEEF5;
+  border-radius: 20px;
+  padding: 10px;
+  cursor:pointer;
+  transition: .3s;
+}
+button:hover{
+  border-radius: 0;
+}
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/*adaug aici ce am pus nou*/
+.container {
+  padding: 64px;
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+/* 1/3 column */
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+    .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+.responsive {
+  width: 100%;
+  max-width: 463px;
+  height: auto;
+}
+
+
+//de aici e background si navbar
+
+.container-fluid{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #FFF;
+}
+
+/* navbar */
+nav{
+  color: #FFF;
+  float: right;
+  margin:30px 90px;
+  margin-bottom: 10px;
+}
+nav ul{
+  list-style: none;
+}
+nav ul li {
+  float: left;
+  transition: .3s;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #EFEEF5;
+  transition: .5;
+  font-size: 15px;
+  margin-left:16px;
+}
+nav ul li:hover a{
+  text-decoration: none;
+  color: #591BC5;;
+}
+nav ul li:hover{
+  height: 45px;
+  padding-top: 30px;
+  margin-top: -30px;
+ background: #EFEEF5;
+  text-decoration: none;
+  transform: skew(15deg);
+}
+/* Logo */
+.logo{
+  width: 35px;
+  height: 35px;
+  margin-top: 25px;
+  margin-left: 80px;
+  float: left;
+}
+.logo span{
+  color: #FFFFFF;
+  font-size: 100%;
+  line-height: 1.4;
+  padding-left: 5px;
+  font-weight: bold;
+}
+.imglogo {
+  width: 80%;
+  margin-top: 12px;
+  margin-left: 20px;
+
+  padding: 18px;
+}
+
+.divmarginsus {
+  margin-top: 25px;
+  margin-right: 22px;
+}
+
+.sidebarmargin {
+  margin: 0;
+}
+
+.margintopforlines {
+  margin-top: 22px;
+}
+
+.colorformenu {
+  color: white;
+}
+
+.colorformenublack {
+  color: black;
+}
+
+h1 {
+  padding: 10px;
+}
+    </style>
+  </head>
+
+<body>
+
+<div class="w3-top w3-pink">
+  <div class="w3-nav-bar w3-card" id="myNavbar">
+    <div class="w3-left w3-bar-item">
+      <a href="index.html" class="w3-bar-item">
+        <img src="altepoze/logo.png" class = "imglogo">
+      </a>
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium colorformenu margintopforlines" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small w3-bar-item divmarginsus colorformenu">
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Team</a>
+      <a href="galery.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Galery</a>
+      <a href="games.html" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> Games</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large sidebarmargin" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-animate-right w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+  <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Team</a>
+  <a href="galery.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Galery</a>
+  <a href="games.html" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> Games</a>
+</nav>
+
+
+<!-- header -->
+
+ <!-- de aici vin cardurile -->
+<div class="container colorformenublack w3-white" style="padding-top: 160px">
+  <div class="row">
+    <div class="column-66">
+      <h1 style="font-family: Josefin Sans">Only One Way</h1>
+      <p><span style="font-size:24px">The main purpose of this game is to satisfy your interest and to capture your attention with its content.<br>The game is about saving 11 people from a great disaster and...<br>Hmm...what do you think is the best idea to fight against  a disaster?...OTHER DISASTERS✔.</span> </p>
+      <a target="_self" href="https://serban-orza.itch.io/only-one-way"><button>Download</button></a>
+    </div>
+    <div class="column-33" style="padding: 12px">
+        <img src="poze_jocuri/onlyoneway.png" class="responsive">
+    </div>
+  </div>
+</div>
+
+<div class="container colorformenu">
+  <div class="row">
+    <div class="column-33" style="padding: 12px">
+        <img src="poze_jocuri/onlyonewayxmas.png" class="responsive">
+    </div>
+
+    <div class="column-66">
+      <h1 style="font-family: Josefin Sans">Only One Way - Christmas Edition</h1>
+      <p><span style="font-size:24px">A new version of the game "Only One Way", but with a special level.</span></p>
+      <a target="_self" href="https://serban-orza.itch.io/only-one-way-christmas-edition"><button>Download</button></a>
+    </div>
+  </div>
+</div>
+
+<div class="container colorformenublack w3-white" style="padding-top: 160px">
+  <div class="row">
+    <div class="column-66">
+      <h1 style="font-family: Josefin Sans">Only One Way 2</h1>
+      <p><span style="font-size:24px">coming soon</span></p>
+    </div>
+    <div class="column-33" style="padding: 12px">
+        <img src="poze_jocuri/comingsoon.jpg" class="responsive">
+    </div>
+  </div>
+</div>
+
+<div class="container colorformenu">
+  <div class="row">
+    <div class="column-33" style="padding: 12px">
+        <img src="poze_jocuri/beyondinfinity.png" class="responsive">
+    </div>
+
+    <div class="column-66">
+      <h1 style="font-family: Josefin Sans">Beyond Infinity</h1>
+      <p><span style="font-size:24px">A game designed by Serban Orza, Sebastian Sincari and Raul Oanea, 3 members of the Games CNSCM company.<br>In this game, the aliens have destroyed your planet and you need to free your remaining friends to battle together against the enemies. It is a space adventure game made for FIICODE 2022, 15 may, competiton.</span></p>
+      <a target="_self" href="https://serban-orza.itch.io/beyond-infinity"><button>Download</button></a>
+    </div>
+  </div>
+</div>
+
+<div class="container colorformenublack w3-white" style="padding-top: 160px">
+  <div class="row">
+    <div class="column-66">
+      <h1 style="font-family: Josefin Sans">Finding the lost</h1>
+      <p><span style="font-size:24px">Set in a haunted mansion, you play as a detective. You have to find out the hidden keys, a secret code and escape the house until it's not too late.</span></p>
+      <a target="_self" href="https://serban-orza.itch.io/finding-the-lost"><button>Download</button></a>
+    </div>
+    <div class="column-33" style="padding: 12px">
+        <img src="poze_jocuri/findingthelost.png" class="responsive">
+    </div>
+  </div>
+</div>
+
+<div class="container colorformenu">
+  <div class="row">
+    <div class="column-33" style="padding: 12px">
+        <img src="poze_jocuri/onlyonenight.jpeg" class="responsive">
+    </div>
+
+    <div class="column-66">
+      <h1 style="font-family: Josefin Sans">One Night Left</h1>
+      <p><span style="font-size:24px">Jocul care a schimbat globul pamantesc!!!<br>Singur intr-o lume necunoscuta, eroul nostru porneste in salvarea lumii insa prima data trebuie sa distruga una din cele 7 puteri ale Galaxiei. Aparata de portavioane, turnuri de control, militari nervosi si avione S27 dotate cu Shielduri antisonice, baza inamica se dovedeste a fi una dintre cele mai indistructibile baze...darrrrr, si eroul nostru are ajutor...ii are pe cei 121 de Sateliti reincarcabili ce impanzesc cerul.<br>Vei reusi sa o distrugi in timp util? Atunci...porneste motorul si hai sa eliberam lumea!:)</span></p>
+      <a target="_self" href="https://serban-orza.itch.io/one-night-left"><button>Download</button></a>
+    </div>
+  </div>
+</div>
+
+<div class="container colorformenublack w3-white" style="padding-top: 160px">
+  <div class="row">
+    <div class="column-66">
+      <h1 style="font-family: Josefin Sans">Los Stefanoles</h1>
+      <p><span style="font-size:24px">Un joc facut pentru Targul de Craciun 2021<br>Am reusit s strangem bani pentru copiii nevoiasi. La el au lucrat membri clubului Games && Apps cnscm.<br>Jocul este depsre liceul nostru si cateva mistere ascunse.</span></p>
+      <a target="_self" href="https://serban-orza.itch.io/los-stefanoles"><button>Download</button></a>
+    </div>
+    <div class="column-33" style="padding: 12px">
+        <img src="poze_jocuri/losstefanoles.jpeg" class="responsive">
+    </div>
+  </div>
+</div>
+
+<div class="container colorformenu">
+  <div class="row">
+    <div class="column-33" style="padding: 12px">
+        <img src="poze_jocuri/arbore.png" class="responsive">
+    </div>
+
+    <div class="column-66">
+      <h1 style="font-family: Josefin Sans">Arbore 1011 </h1>
+      <p><span style="font-size:24px">An application for building graphs and trees</span></p>
+      <a target="_self" href="https://serban-orza.itch.io/arbore-1011"><button>Download</button></a>
+    </div>
+  </div>
+</div>
+
+<div class="container colorformenublack w3-white" style="padding-top: 160px">
+  <div class="row">
+    <div class="column-66">
+      <h1 style="font-family: Josefin Sans">Ce spun stefanistii?</h1>
+      <p><span style="font-size:24px">Aplicatia din spatele activitatii Ce Spun Stefanistii? de la VS5, 8.8.2022->12.8.2022., adica un fel de Ce Spun Romanii?, dar personalizat pentru liceul din care fac parte.<br>Vreau sa multumesc tuturor persoanelor implicate, inclusiv "Cabralilor" cat si celor de la butoane pentru ca impreuna am reusit sa cream multe amintiri frumoase!</span></p>
+      <a target="_self" href="https://serban-orza.itch.io/ce-spun-stefanistii"><button>Download</button></a>
+    </div>
+    <div class="column-33" style="padding: 12px">
+        <img src="poze_jocuri/cespunstefanistii.png" class="responsive">
+    </div>
+  </div>
+</div>
+
+<div class="container colorformenu">
+  <div class="row">
+    <div class="column-33" style="padding: 12px">
+        <img src="poze_jocuri/triviador.jpeg" class="responsive">
+    </div>
+
+    <div class="column-66">
+      <h1 style="font-family: Josefin Sans">Triviador - The Final</h1>
+      <p><span style="font-size:24px">Aplicatia din cadrul activitatii Triviador de la Vara Stefanistilor 5.<br>A fost facuta special pentru finala pentru a face jocul mai atractiv.</span></p>
+      <a target="_self" href="https://serban-orza.itch.io/triviador-finala-vs5"><button>Download</button></a>
+    </div>
+  </div>
+</div>
+
+<div class="container colorformenublack w3-white" style="padding-top: 160px">
+  <div class="row">
+    <div class="column-66">
+      <h1 style="font-family: Josefin Sans">The Last Star</h1>
+      <p><span style="font-size:24px">Un joc colorat si minunat unde poti upgrada armele, cumpara abilitati noi si juca pe mai multe dificultati.<br>De asemenea sunt multe efecte speciale...si explozii..si asteroizi..si tot ce vrei!<br>Si ce poate fi mai fain...decat un sistem de pacanele inclus in joc?:)</span></p>
+      <a target="_self" href="https://serban-orza.itch.io/the-last-star"><button>Download</button></a>
+    </div>
+    <div class="column-33" style="padding: 12px">
+        <img src="poze_jocuri/thelaststar.png" class="responsive">
+    </div>
+  </div>
+</div>
+
+</body>
+
+<script>
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+  </script>
+
+</html>
+ 

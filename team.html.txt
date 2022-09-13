@@ -1,0 +1,625 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Games && Apps CNSCM</title>
+    <link rel="icon" type="image/x-icon" href="altepoze/favicon.ico">
+    
+    <style>
+
+      body {
+        background-image: url(altepoze/rozaliuu.png); /* The image used for background*/
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-position: center; /* Center the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        font-family: "Josefin Sans", sans-serif;
+        box-sizing: border-box;
+      }
+
+//pentru carduri si toate cele 
+    .strike {
+        display: block;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap; 
+    }
+
+    .strike > span {
+        position: relative;
+        display: inline-block;
+    }
+	
+    .strike > span:before,
+    .strike > span:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 9999px;
+        /* Here is the modification */
+        height: 5px; /* space between lines */
+        margin-top: -2px; /* adjust vertical align */
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+    }
+
+    .strike > span:before {
+        right: 100%;
+        margin-right: 15px;
+    }
+
+    .strike > span:after {
+        left: 100%;
+        margin-left: 15px;
+    }
+
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}    
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 445px;
+  margin: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.responsive {
+  width: 100%;
+  max-width: 463px;
+  height: auto;
+  overflow: hidden;
+}
+
+
+/*de aici e background si navbar*/
+
+.container-fluid{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: #FFF;
+}
+
+/* navbar */
+nav{
+  color: #FFF;
+  float: right;
+  margin:30px 90px;
+  margin-bottom: 10px;
+}
+nav ul{
+  list-style: none;
+}
+nav ul li {
+  float: left;
+  transition: .3s;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #EFEEF5;
+  transition: .5;
+  font-size: 15px;
+  margin-left:16px;
+}
+nav ul li:hover a{
+  text-decoration: none;
+  color: #591BC5;;
+}
+nav ul li:hover{
+  height: 45px;
+  padding-top: 30px;
+  margin-top: -30px;
+ background: #EFEEF5;
+  text-decoration: none;
+  transform: skew(15deg);
+}
+/* Logo */
+.logo{
+  width: 35px;
+  height: 35px;
+  margin-top: 25px;
+  margin-left: 80px;
+  float: left;
+}
+.logo span{
+  color: #FFFFFF;
+  font-size: 100%;
+  line-height: 1.4;
+  padding-left: 5px;
+  font-weight: bold;
+}
+.imglogo {
+  width: 80%;
+  margin-top: 12px;
+  margin-left: 20px;
+
+  padding: 18px;
+}
+
+.divmarginsus {
+  margin-top: 25px;
+  margin-right: 22px;
+}
+
+.sidebarmargin {
+  margin: 0;
+}
+
+.margintopforlines {
+  margin-top: 22px;
+}
+
+.colorformenu {
+  color: white;
+}
+
+.spacebetweenlogos {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.textpaddingupdown {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+  padding: 10px;
+}
+    </style>
+  </head>
+
+<body>
+
+<div class="w3-top w3-pink">
+  <div class="w3-nav-bar w3-card" id="myNavbar">
+    <div class="w3-left w3-bar-item">
+      <a href="index.html" class="w3-bar-item">
+        <img src="altepoze/logo.png" class = "imglogo">
+      </a>
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium colorformenu margintopforlines" onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small w3-bar-item divmarginsus colorformenu">
+      <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Team</a>
+      <a href="galery.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Galery</a>
+      <a href="games.html" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> Games</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large sidebarmargin" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-animate-right w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+  <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Team</a>
+  <a href="galery.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Galery</a>
+  <a href="games.html" class="w3-bar-item w3-button"><i class="fa fa-gamepad"></i> Games</a>
+</nav>
+
+
+<!-- header -->
+
+ <!-- de aici vin cardurile -->
+<!-- I -->
+<div class = "row" style="padding-top:120px;">
+  <!-- 1 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/celmaijmkdintretoti.jpg" class="responsive">
+     <h1>Ovidiu Marcu</h1>
+     <div class="textlatitlu">
+         <p class="title">Founder</p>
+     </div>
+     <p>Teacher at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <span style='font-size:22px;'>&#128526;</span>
+  </div>
+  </div>    
+    
+  <!-- 2 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/daniela_marcu.jpg" class="responsive">
+     <h1>Daniela Marcu</h1>
+     <div class="textlatitlu">
+         <p class="title">Founder</p>
+     </div> 
+     <p>Teacher at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <a href="https://www.facebook.com/profile.php?id=100009824440957"><i class="fa fa-facebook" style="font-size:30px"></i></a>
+  </div>
+  </div>
+
+  <!-- 3 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/serbanel20.jpg" class="responsive">
+     <h1>Șerban Orza</h1>
+     <div class="textlatitlu">
+         <p class="title">CEO, Founder & Head of the programing department</p>
+     </div> 
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+
+     <div class="spatiu">
+        <a href="https://www.instagram.com/serban.orza/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/serban.orza"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+
+  </div>
+  </div>
+
+  <!-- 4 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/domuncox.jpeg" class="responsive">
+     <h1>Ștefan Domunco</h1>
+     <p class="title">Founder & Head of the programing & design department</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/stefandomunco/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100013687776158"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>
+</div>
+
+<!-- II -->
+<div class = "row">
+  <!-- 5 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/sebicujmk20.jpg" class="responsive">
+     <h1>Sebastian Șincari</h1>
+     <p class="title">Founder, Web Designer & Head of the programing department</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/sebisincari/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100008616612772"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>    
+    
+  <!-- 6 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/sefulafemei20.jpg" class="responsive">
+     <h1>Raul Oanea</h1>
+     <p class="title">Founder, Web Designer & Head of the 2D & 3D graphics department</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/raul.oanea/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/raul.oanea.3"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>
+
+  <!-- 7 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/rares20.jpg" class="responsive">
+     <h1>Rareș Oprea</h1>
+     <div class="textlatitlu">
+         <p class="title textpaddingupdown">Programmer</p>
+     </div>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/raresuk_04/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/rares.oprea.17"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>
+
+  <!-- 8 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/codrin.jpeg" class="responsive">
+     <h1>Codrin Teodosie</h1>
+     <div class="textlatitlu">
+         <p class="title textpaddingupdown">Programmer</p>
+     </div>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/codrinteodosie/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100004126036521"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>
+</div>
+
+<!-- III -->
+<div class = "row">
+  <!-- 9 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/bogus20.jpg" class="responsive">
+     <h1>Bogdan Rezuș</h1>
+     <p class="title">Programmer</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/bogdanrezus/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/bogdan.rezus"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>    
+    
+  <!-- 10 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/drumea.jpeg" class="responsive">
+     <h1>Matei Drumea</h1>
+     <p class="title">Programmer</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/mateidrumea/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/matei.drumea.9"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>
+
+  <!-- 11 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/irina.jpeg" class="responsive">
+     <h1>Irina Bardan</h1>
+     <p class="title">2D & 3D Artist</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/irina.bardan/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/irina.bardan"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>
+
+  <!-- 12 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/mirela20.jpg" class="responsive">
+     <h1>Mirela Comșa</h1>
+     <p class="title">PR department, Designer</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/mirela_comsa/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100077223505418"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>
+</div>
+
+<!-- I|V -->
+<div class = "row">
+  <!-- 13 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/anastrimbu20.jpg" class="responsive">
+     <h1>Ana Strîmbu</h1>
+     <p class="title">2D & 3D Artist</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/str.anaa/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/strimbu.anamaria"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>    
+    
+  <!-- 14 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/vidami.jpeg" class="responsive">
+     <h1>Alexandru Vidami</h1>
+     <p class="title">Programmer</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/_6red9_/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/I6IRedI9I"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>
+
+  <!-- 15 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/irina_cc.jpeg" class="responsive">
+     <h1>Irina Ciurlica-Crețu</h1>
+     <p class="title">2D & 3D Artist</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/irina.c.c/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/iry.cretu"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>
+
+  <!-- 16 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/criss.jpg" class="responsive">
+     <h1>Cristina Lucan</h1>
+     <p class="title">Sounds & Music Department, Designer</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/crisss_543/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/mria.cristina.39"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>
+</div>
+
+<!-- V -->
+<div class = "row">
+  <!-- 17 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/vali20.jpg" class="responsive">
+     <h1>Valentin Munteanu</h1>
+     <p class="title">Programmer, Sounds & Music Department, Designer</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/munteanu_valentin_ioan/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/munteanu.valentin04"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>
+
+  <!-- 18 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/gavrilean20.jpg" class="responsive">
+     <h1>Ștefan Gavrilean</h1>
+     <div class="textlatitlu">
+         <p class="title">Speaker, PR department</p>
+     </div>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/stefang5497/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/stefan.gavrilean.1"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>        
+     </div>
+  </div>
+  </div>
+
+  <!-- 19 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/malos30.jpg" class="responsive">
+     <h1>Alexandru Maloș</h1>
+     <p class="title">Programmer, Sounds & Music Department, Designer</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/melloosh._/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>
+        <a href="https://www.facebook.com/alexandru.malos.77"><i class="fa fa-facebook spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>
+  
+  <!-- 20 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/matei_pelinari40.jpg" class="responsive">
+     <h1>Matei Pelinari</h1>
+     <div class="textlatitlu">
+         <p class="title">Sounds & Music Department, Designer</p>
+     </div>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava</p>
+     <span style='font-size:22px;'>&#128526;</span>
+  </div>
+  </div>
+</div>
+
+<!-- VI -->
+<div class = "row">
+  <!-- 21 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/medeea20.jpg" class="responsive">
+     <h1>Bichir Medeea</h1>
+     <p class="title">2D & 3D Artist</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/medeea._.29/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>      
+     </div>
+  </div>
+  </div>    
+    
+  <!-- 22 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/andreea.jpeg" class="responsive">
+     <h1>Andreea Cazacu</h1>
+     <p class="title">2D & Design Department</p>
+     <p>Student at "Colegiul Național Ștefan cel Mare Suceava"</p>
+     <div class="spatiu">
+        <a href="https://www.instagram.com/andreeacazacu10/"><i class="fa fa-instagram spacebetweenlogos" style="font-size:30px"></i></a>       
+     </div>
+  </div>
+  </div>
+
+  <!-- 23 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/bob.jpg" class="responsive">
+     <h1>Bob</h1>
+     <p class="title">Bob only knows how to hit the hammer</p>
+     <p>Unemployed</p>
+     <i class="fa fa-gear fa-spin" style="font-size:24px"></i>
+  </div>
+  </div>
+
+  <!-- 24 -->
+  <div class = "column">
+  <div class="card">
+     <img src="poze/nustim.jpg" class="responsive">
+     <h1>Anonymous</h1>
+     <p class="title">?ujh^&(*da%&09-3e4234</p>
+     <p>SELECT * FROM SMECHERI</p>
+     <i class="fa fa-bug" style="font-size:24px"></i>
+  </div>
+  </div>
+</div>
+
+</body>
+
+<script>
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+  </script>
+
+</html>
+ 
