@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV template</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Montserrat font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+    <style> 
+      #section1 {
+        background-color: #1a1831;
+      }
+      #down_button {
+        background-color: #a21232;
+      }
+      a.button_class {
+        background-color: #a21232;
+      }
+      a.button_class:hover, a.button_class:active {
+        background-color: #a21232;
+      }
+      .i_arrow {
+        vertical-align: -0.35em;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>   
+    <section>
+      <!-- MOBILE NAVIGATION -->
+      <div class="w3-container w3-padding-16 w3-border-bottom w3-hide-medium w3-hide-large">
+        <a href="#home" class="w3-bar-item w3-button w3-hover-none">The CURRICULUM VITAE of Raul Oanea</a>
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNavigation()">&#9776;</a>
+      </div>
+      <div id="mobile-nav" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium w3-sticky">
+        <a href="#about" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">ABOUT</a>
+        <a href="#resume" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">RESUME</a>
+        <a href="#projects" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">PROJECTS</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-center w3-hover-none w3-border-white w3-bottombar w3-hover-border-green w3-hover-text-green" onclick="toggleNavigation()">CONTACT</a>
+      </div>
+
+      <!-- SOCIAL SECTION -->
+      <section id="section1" class="image-section w3-quarter w3-fixed w3-padding-small">
+        <!--IMAGE/AVATAR-->
+        <img src="avatar.png" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
+        <!--SCIAL NETWORK BUTTONS-->
+        <div class="links w3-margin-top w3-padding-small">
+          <a class="icon-link w3-text-sand w3-hover-text-red" href="https://www.facebook.com/raul.oanea/" target="_blank">
+              <i data-feather="facebook"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-red" href="https://www.instagram.com/raul.oanea/" target="_blank">
+             <i data-feather="instagram"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-red" href="https://github.com/raulemm7" target="_blank">
+             <i data-feather="github"></i>
+          </a>
+          <a class="icon-link w3-text-sand w3-hover-text-red" href="https://www.linkedin.com/in/raul-oanea-80a1b1235/" target="_blank">
+             <i data-feather="linkedin"></i>
+          </a>
+        </div>
+        <!--CV DOWNLOAD BUTTON-->
+        <div class="w3-container w3-padding-16">
+          <a href="./resume.pdf" class="button_class w3-button w3-round-small w3-padding-large" target="_blank" download="resume.pdf">
+            <i data-feather="arrow-down" class="i_arrow"></i>
+            <span class="w3-margin-left download-text" style="color: white;">DOWNLOAD CV</span>
+          </a>
+        </div>
+      </section>
+
+      <!--CV CONTENT SECTION-->
+      <section class="w3-threequarter w3-padding-large w3-right">
+        <!--DESKTOP NAVIGATION-->
+        <div class="w3-container w3-padding-large w3-border-bottom w3-hide-small">
+          <a href="#home" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-red">The CURRICULUM VITAE of Raul-Emmanuel Oanea</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-red w3-hover-text-red w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">CONTACT</a>
+          <a href="#projects" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-red w3-hover-text-red w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">PROJECTS</a>
+          <a href="#resume" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-red w3-hover-text-red w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">RESUME</a>
+          <a href="#about" class="w3-bar-item w3-button w3-hover-none w3-border-white w3-bottombar w3-hover-border-red w3-hover-text-red w3-right w3-hide-small" style="border-width: 2px !important;" onclick="toggleNavigation()">ABOUT</a>
+        </div>
+        <div class="content-container w3-margin-top-2">
+          <!--HOME SECTION-->
+          <div id="home" class="home w3-container w3-margin-top-4 w3-cursive">
+            <p style="font-style: italic; font-size:x-large;">"The mind is the limit. When you face your struggles, you overcome them."</p>
+            <h1>Raul-Emmanuel Oanea (19)</h1>
+            <h3>Computer Science student</h3>
+            <p></p>
+          </div>
+
+          <!--ABOUT SECTION-->
+          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
+            <h2 class="w3-border-bottom w3-border-red" style="border-width: 3px !important;">ABOUT</h2>
+            <p class="w3-margin-top-2"> 
+              My name is Raul-Emmanuel Oanea, and I am a young enthusiast passionate about 
+              programming and creating something beautiful and useful for people using the 
+              knowledge I've acquired in the field of computer science over time. I graduated 
+              from one of the most prestigious high schools in the country, "Stefan cel Mare" National 
+              College in Suceava, and I am currently pursuing my university studies at the Faculty of Mathematics 
+              and Computer Science at Babes-Bolyai University in Cluj-Napoca, with a major in computer science.
+            </p>
+            <p class=""> 
+              In terms of experience, I am one of the four founders of the game and application development club 
+              at the high school where I studied. Within this club, I serve as the main web 
+              designer and am responsible for the 2D and 3D graphics department. Additionally, 
+              whenever my schedule allows, I visit my former high school to share the knowledge I've gained 
+              from programming and application development competitions with the current club members. I also
+               provide them with advice to aid in their application development process.
+            </p>
+            <p class=""> 
+              I am a sociable individual who enjoys working in teams and performs well under pressure. I thrive 
+              on meeting new people, especially those who share similar passions as mine, 
+              and I find joy in sharing information with them. Every day, I strive to evolve 
+              and learn as much as I can, constantly seeking new knowledge and opportunities 
+              for growth.
+            </p>
+          </div>
+
+          <!--RESUME-->
+          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-red" style="border-width: 3px !important;">RESUME</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+            <!---EDUCATION SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-red">MY EDUCATION</h3>
+                <p>October 2023 - present </p>
+                <h4>Computer Science, Bachelor's level, Faculty of Mathematics and Computer Science, Babes-Bolyai University, Cluj-Napoca</h4>
+                <p>September 2019 - June 2023 </p>
+                <h4>Highschool diploma, Colegiul National "Stefan cel Mare", Suceava</h4>
+            </div>
+
+            <!--SKILLS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-red">MY SKILLS</h3>
+              <!--SOFT SKILLS-->
+              <h4>Soft skills</h4>
+              <ul class="w3-ul" style="font-weight: 500;">
+                <li> I collaborate effectively with others towards a common goal. I am able to compromise, 
+                  resolve conflicts, and contribute positively to group dynamics.
+                </li>
+                <li>I have the capacity to analyze situations, identify challenges, 
+                  and develop creative solutions. I excel in critical thinking, adaptability, 
+                  and resourcefulness. 
+                </li>
+                <li>I efficiently organize and prioritize tasks to meet deadlines and 
+                  optimize productivity.
+                </li>
+                <li>
+                  I am flexible and open to change, especially in dynamic work environments. 
+                  I demonstrate resilience, willingness to learn, and embrace new technologies or methodologies.
+                </li>
+                <li>
+                  I think innovatively and generate new ideas or approaches. I engage in lateral thinking, problem reframing, 
+                  and the ability to see connections between seemingly unrelated concepts.
+                </li>
+              </ul>
+              <!--TECHNICAL SKILLS-->
+              <h4>Technical skills</h4>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>
+                    I have extensive experience with HTML, CSS, and JavaScript technologies.
+                  </li>
+                  <li>
+                    Over time, I've honed strong algorithm problem-solving skills through both work 
+                    and participation in various programming competitions. 
+                  </li>
+                  <li>
+                     I adapt seamlessly to any programming language and can easily transition from one to another.
+                  </li>
+                  <li>
+                     When it comes to other software technologies, I'm proficient in C++ and Python, and I'm also familiar with .NET and GitHub technologies.
+                  </li>
+                  <li>
+                     As I continue to evolve, I consistently expand my proficiency and versatility in software development.
+                  </li>
+                </ul>
+            </div>
+
+            <!--INTERESTS SECTION-->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-amber">MY HOBBIES AND INTERESTS</h3>
+                <ul class="w3-ul" style="font-weight: 500;">
+                  <li>
+                    I have a keen interest in Formula 1 races and hiking, and I enjoy spending leisure time with friends. 
+                  </li>
+                  <li>
+                    In the future, I aspire to evolve comprehensively, with a particular emphasis on professional development.
+                  </li>
+                  <li>
+                    It is my ambition to acquire new knowledge on a daily basis, to learn from the best, and to lend a helping hand whenever necessary.
+                  </li>
+                </ul>
+            </div>
+          </div>
+
+          <!-- PROJECTS SECTION -->
+          <div id="projects" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-red" style="border-width: 3px !important;">PROJECTS</h2>
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+
+            <!-- MY EXPERIENCE SECTION -->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-red">MY EXPERIENCE</h3>
+                <p>October 2022 - June 2023 </p>
+                <h4>Founder, Web Design Leader and Head of the 2D & 3D graphics department of <a href="https://gamescnscm.github.io/">Games and Apps CNSCM</a>, student-made club</h4>
+            </div>
+
+            <!-- WEBSITES I HAVE DEVELOPED SECTION -->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-red">WEBSITES I HAVE DEVELOPED </h3>
+              <ul class="w3-ul" style="font-weight: 500;">
+                  <li>
+                    <p style="font-size: 130%;"> <a href="https://gamescnscm.github.io/">The website of Games and Apps CNSCM</a></p> 
+                  </li>
+                  <li>
+                    <p style="font-size: 130%;"><a href="https://erasmuscnstefancelmare.github.io/">The website of Stefan cel Mare National College Suceava, Erasmus section</a></p>
+                  </li>
+                  <li>
+                    <p style="font-size: 130%;"></p>
+                  </li>
+                </ul>
+            </div>
+
+            <!-- other projects section -->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-red">OTHER PROJECTS I HAVE WORKED ON</h3>
+              <ul class="w3-ul" style="font-weight: 500;">
+                  <li>
+                    <p style="font-size: 130%;"> <a href="https://github.com/raulemm7/ubb_work">University projects</a> (GitHub repository)</p> 
+                  </li>
+                  <li>
+                    <p style="font-size: 130%;"><a href="https://serban-orza.itch.io/beyond-infinity">Beyond Inifnity</a> (game made with two other colleagues in the FIICODE Iasi 2022 competition, 4th place out of 11)</p>
+                  </li>
+                  <li>
+                    <p style="font-size: 130%;"><a href="https://github.com/raulemm7/micardo-rilos-/tree/main">Numeapp</a> (GitHub repository with the code of the app, made in the UniHack Timisoara 2022 competition, 19th place out of 89)</p>
+                  </li>
+                  <li>
+                    <p style="font-size: 130%;"><a href="https://gamescnscm.github.io/games.html">Other games developed by me and friends</a> (website)</p>
+                  </li>
+                </ul>
+            </div>
+
+            <!-- cercetari -->
+            <div class="w3-container w3-margin-top-2 w3-cursive">
+              <h3 class="w3-border-red">MY RESEARCH WORKS</h3>
+              <ul class="w3-ul" style="font-weight: 500;">
+                  <li>
+                    <p style="font-size: 130%;"> <a href="./lucrare_atestat.pdf" target="_blank" download="lucrare_atestat.pdf">Lucrare de atestat</a> (PDF Format, contains performance
+                     specifications of the <a href="https://erasmuscnstefancelmare.github.io/">website of Stefan cel Mare National College, Erasmus section</a>)
+                    </p> 
+                  </li>
+                </ul>
+            </div>
+
+          </div>
+
+          <!--CONTACT SECTION-->
+          <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
+            <h2 class="w3-border-bottom w3-border-red" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+            <div class="w3-margin-top-2" style="font-weight: 500;">
+              <p>Name: Raul-Emmanuel Oanea</p>
+              <p>Adress: str. Rapsodiei, nr. 11, cart. Zorilor, Cluj-Napoca, Cluj</p>
+              <p>Phone number: +40757620041</p>
+              <p>E-mail: rauloanea7@gmail.com</p>
+            </div>
+          </div>
+
+        <!--FOOTER-->
+        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+          <p>© 2024 - Raul-Emmanuel Oanea</p>
+        <!-- End footer -->
+        </footer>
+
+        <!--END OF CV SECTION-->
+      </section>      
+    </section>
+    <script>
+      // Function to toggle mobile navigation
+      function toggleNavigation() {
+        let nav = document.getElementById("mobile-nav");
+        if (nav.classList.contains('w3-show')) {
+          nav.classList.remove('w3-show');
+        } else { 
+          nav.classList.add('w3-show');
+        }
+      }
+    </script>
+    <script>
+      // Script to load feather icons
+      feather.replace()
+    </script>
+  </body>
+</html>
