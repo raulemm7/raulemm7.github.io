@@ -185,23 +185,6 @@ body * {
     .w3-panel {
       padding: 0.01em;
     }
-
-      #section1 {
-        background-color: #1a1831;
-      }
-      #down_button {
-        background-color: #a21232;
-      }
-      a.button_class {
-        background-color: #a21232;
-      }
-      a.button_class:hover, a.button_class:active {
-        background-color: #a21232;
-      }
-      .i_arrow {
-        vertical-align: -0.35em;
-        color: white;
-      }
   
     .download-text {
       display: inline-block;
